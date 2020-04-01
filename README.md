@@ -1,8 +1,8 @@
 # Today I Learned
 
 > 오늘 배운 것은 오늘 기록해두기.
-> Reference : [JayJin](https://github.com/milooy/TIL, "TIL"),
-> [thoughbot](https://github.com/thoughtbot/til, "TIL")
+> Reference : [JayJin](https://github.com/milooy/TIL),
+> [thoughbot](https://github.com/thoughtbot/til)
 
 ## Rules
 
