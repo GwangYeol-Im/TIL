@@ -28,3 +28,21 @@
 
     git log -p
     # 커밋에서 변경된 내용 함께 확인 가능
+
+    git log --graph
+    # 히스토리 그래프 형식으로 출력
+
+    git diff
+    # 이전 커밋과 비교하여 변경 사항 확인
+
+    git remote add [address]
+    # 원격 레포지토리 등록
+
+    git push origin [branch name]
+    # 특정 branch 생성 후 remote에 push
+
+    git checkout [branch name]
+    # branch 간 이동하기
+
+    git checkout -b [branch name]
+    # branch 생성하기
