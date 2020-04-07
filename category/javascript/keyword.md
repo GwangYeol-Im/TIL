@@ -19,4 +19,5 @@
 
 ### Tip
 
-개발자들 사이에서는 UPPER_CASE 같이 대문자와 밑줄은 주로 immutable한 값을 선언할 때 많이 사용하고 lowerCase 같이 소문자와 camelCase는 mutalbe 한 배열이나 객체 변수 선언에 많이 사용한다.
+개발자들 사이에서는 UPPER_CASE 같이 대문자와 밑줄은 주로 immutable한 값을 선언할 때 많이 사용하고,  
+ lowerCase 같이 소문자와 camelCase는 mutalbe 한 배열이나 객체 변수 선언에 많이 사용한다.
