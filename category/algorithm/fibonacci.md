@@ -14,19 +14,24 @@ e.g. 1 + 1 + 2 + 3 + 5 + 8 ...
 
 ### _Answer_
 
-```
+```javascript
 function sumFibs(num) {
-    if(num <= 0) return 0;
-} // num 이 음수라면 0을 리턴한다.
+  if (num <= 0) {
+    return 0;
+  } // num 이 음수라면 0을 리턴한다.
 
-const arrFib = [1, 1]; // 피보나치 수열의 앞 분인 1,1을 이루는 배열 생성
-let nextFib = 0; // 다음 항을 이루는 sum 선언
+  const arrFib = [1, 1]; // 피보나치 수열의 앞 분인 1,1을 이루는 배열 생성
+  let nextFib = 0; // 다음 항을 이루는 sum 선언
 
-while ((nextFib = arrFib[0] + arrFib[1]) <= num) {
-    arrFib.unshift(nextFib); // 이전 항과 현재 항의 합이 주어진 인자보다 커질 때까지 합계를 배열의 앞에 넣는다.
-                            // 여기서 중요한 것은 순차적인 수열이지만 배열 앞에 값을 생성해
-                            // 반복적으로 0번째 와 1번째 인덱스를 연산시키는 것이다.
+  while ((nextFib = arrFib[0] + arrFib[1]) <= num) {
+    arrFib.unshift(nextFib);
+    // 이전 항과 현재 항의 합이 주어진 인자보다 커질 때까지 합계를 배열의 앞에 넣는다.
+    // 여기서 중요한 것은 순차적인 수열이지만 배열 앞에 값을 생성해
+    // 반복적으로 0번째 와 1번째 인덱스를 연산시키는 것이다.
+  }
+
+  return arrFib.filter(x => x % 2 !== 0).reduce((a, b) => a + b);
+  //현재까지의 프로세스로 주어진 인자보다 작은 수열들의 항을 담은 배열을 만들어냈다.
+  //리턴 값으로 filter 메소드를 이용해 홀수를 판별하고, reduce 메소드로 전체 인덱스의 합을 도출하자.
 }
-
-return arrFib.filter(x => x % 2 !== 0 ).reduce((a,b) => a+b);
 ```
