@@ -53,7 +53,10 @@ HTML 파일과 javascript파일을 연결할 때 스크립트 페이지를 **언
 
 > parsing HTML & fetching js > executing js > parsing the rest of the HTML
 
-    HTML을 분석하는 동안 비동기적(병렬)으로 js 스크립트 페이지를 내려받기 때문에 페이지 로딩 시간은 단축시킬 수 있지만 여전히 js가 실행되는 동안 html을 온전히 표현할 수 없고, js 내에서 queryselector를 이용한 dom요소를 처리할 때 html의 분석이 덜 끝나있기 때문에 호출 부분에서 문제가 생길 수 있다.
+    HTML을 분석하는 동안 비동기적(병렬)으로 js 스크립트 페이지를 내려받기 때문에
+    페이지 로딩 시간은 단축시킬 수 있지만 여전히 js가 실행되는 동안 html을 온전히 표현할 수 없고,
+    js 내에서 queryselector를 이용한 dom요소를 처리할 때 html의 분석이 덜 끝나있기 때문에
+    호출 부분에서 문제가 생길 수 있다.
 
 ## 4. head에 defer 선언하기.
 
